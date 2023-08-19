@@ -25,9 +25,11 @@ export class MyCounterComponent {
  
   decrement() {
     // TODO: Dispatch a decrement action
+    this.store.dispatch(decrement())
   }
  
   reset() {
     // TODO: Dispatch a reset action
+    this.store.dispatch(reset())
   }
 }
